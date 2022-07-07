@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 300;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Circe"),
+    /* Если не получилось, загрузит woff2 */
+  url("../fonts/circe/circe_300.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+  url("../fonts/circe/circe_300.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 600;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Circe"),
+    /* Если не получилось, загрузит woff2 */
+  url("../fonts/circe/circe_600.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+  url("../fonts/circe/circe_600.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Circe"),
+    /* Если не получилось, загрузит woff2 */
+  url("../fonts/circe/circe_700.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+  url("../fonts/circe/circe_700.woff") format("woff");
+}
