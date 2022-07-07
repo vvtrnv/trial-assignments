@@ -1,0 +1,23 @@
+/*
+==================================
+            Block description
+==================================
+*/
+
+@import url('title.css');
+@import url('categories.css');
+@import url('info.css');
+@import url('price.css');
+@import url('actions.css');
+@import url('about.css');
+@import url('share.css');
+
+.product__description {
+  /*display: flex;*/
+  margin-top: 60px;
+  width: 40%;
+}
+
+
+
+

@@ -1,6 +1,11 @@
 /*@import (inline) "../node_modules/normalize.css/normalize.css";*/
 
 @import url('_fonts.css');
+@import url('buttons.css');
+@import url('blocks/layout.css');
+@import url('blocks/product/gallery.css');
+@import url('blocks/product/description.css');
+
 
 html {
   font-size: 62.5%;
@@ -11,4 +16,11 @@ body {
   font-weight: 300;
 }
 
-@import url('blocks/layout.css');
+a {
+  color: #006be5;
+  text-decoration: none;
+  font-weight: 400;
+}
+a:hover {
+  color: #003a7c;
+}

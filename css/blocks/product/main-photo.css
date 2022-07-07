@@ -1,0 +1,16 @@
+/*
+==================================
+            Block main-photo
+==================================
+*/
+
+.product__main-photo {
+  width: 90%;
+  min-width: 350px;
+  margin: 0px 120px;
+}
+#main-photo {
+  margin: auto;
+  width: 100%;
+  height: auto;
+}

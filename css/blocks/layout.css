@@ -1,6 +1,21 @@
-/* block layout */
+/*
+==================================
+           Block layout
+==================================
+*/
 .layout {
   max-width: 1170px;
   margin: auto;
   height: 1000px;
 }
+
+/*
+==================================
+            Block product
+==================================
+*/
+.product {
+  display: flex;
+  margin-top: 40px;
+}
+

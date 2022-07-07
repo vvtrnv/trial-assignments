@@ -1,0 +1,34 @@
+/*
+==================================
+            buttons
+==================================
+*/
+.button {
+  width: 220px;
+  padding: 10px 0px;
+  text-align: center;
+  display: inline-block;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+}
+.button-to-shop {
+  background-color: #006be5;
+  color: #fff;
+}
+.button-to-shop:hover {
+  color: #fff;
+  background-color: #003a7c;
+}
+.button-to-favorites {
+  padding: 8px 0px;
+  margin-left: 10px;
+  border: 2px solid #d9d9d9;
+}
+.button-to-favorites:hover {
+  color: #fff;
+  background-color: #262626;
+  border: 0px;
+  padding: 10px 0px;
+}

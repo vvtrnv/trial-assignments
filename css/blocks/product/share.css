@@ -1,0 +1,40 @@
+/*
+==================================
+            Block share
+==================================
+*/
+.product__share {
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+.product__share--icon {
+  width: 15px;
+  height: 15px;
+  padding: 8px;
+  border: 2px solid #d9d9d9;
+  border-radius: 50%;
+  margin-left: 15px;
+  transition: all 0.3s;
+}
+.product__share--icon:not(:first-child) {
+  margin-left: 10px
+}
+.product__share--icon:hover {
+  border: 2px solid #003a7c;
+}
+
+.product__share .count-twits {
+  position: relative;
+  margin-left: 10px;
+}
+.product__share .count-twits a{
+  position: absolute;
+  top: 50%;
+  margin-top: -0.625em;
+  left: 50%;
+  margin-left: -0.625em;
+}
+

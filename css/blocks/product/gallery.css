@@ -1,0 +1,12 @@
+/*
+==================================
+            Block gallery
+==================================
+*/
+@import url('preview.css');
+@import url('main-photo.css');
+
+.product__gallery {
+  display: flex;
+  width: 60%;
+}

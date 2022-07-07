@@ -1,5 +1,10 @@
 # Dependency directory
 node_modules
 
-# idea
+# directory
 .idea
+
+psd/phone-320.psd
+psd/tablet-768.psd
+psd/tablet-1000.psd
+
