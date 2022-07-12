@@ -3,20 +3,166 @@
             Block description
 ==================================
 */
-
-@import url('title.css');
-@import url('categories.css');
-@import url('info.css');
-@import url('price.css');
-@import url('actions.css');
-@import url('about.css');
-@import url('share.css');
-
 .product__description {
   /*display: flex;*/
   margin-top: 60px;
   width: 40%;
 }
+
+
+/*
+==================================
+            Block title
+==================================
+*/
+
+.product__title {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+
+/*
+==================================
+            Block categories
+==================================
+*/
+
+.product__categories {
+  padding-top: 20px;
+  font-size: 13px;
+}
+.product__categories a:not(:first-child) {
+  padding-left: 30px;
+}
+
+
+/*
+==================================
+            Block info
+==================================
+*/
+
+.product__info {
+  margin-top: 25px;
+  padding: 10px 25px;
+  background-color: #f4f4f4;
+  width: 315px;
+  font-size: 13px;
+}
+.product__info--existence i {
+  margin-right: 18px;
+}
+.product__info--delivery i {
+  margin-right: 13px;
+}
+.product__info--delivery, .product__info--existence {
+  margin: 8px 0;
+}
+
+
+/*
+==================================
+            Block price
+==================================
+*/
+
+.product__price {
+  padding-top: 50px;
+  font-size: 18px;
+  display: flex;
+}
+.product__price-old {
+  text-decoration: line-through;
+  color: #bfbebe;
+}
+.product__price-current {
+  padding-left: 10px;
+  color: #9a9b9b;
+}
+.product__price-discount {
+  padding-left: 40px;
+}
+.price {
+  font-weight: 600;
+}
+.price:after {
+  content: ' ₽';
+}
+.product__price-discount .sale {
+  font-size: 2rem;
+}
+
+
+/*
+==================================
+            Block actions
+==================================
+*/
+.product__actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+
+/*
+==================================
+            Block about
+==================================
+*/
+.product__about {
+  margin-top: 50px;
+  font-size: 13px;
+}
+
+
+/*
+==================================
+            Block share
+==================================
+*/
+.product__share {
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+.product__share--icon {
+  width: 15px;
+  height: 15px;
+  padding: 8px;
+  border: 2px solid #d9d9d9;
+  border-radius: 50%;
+  margin-left: 15px;
+  transition: all 0.3s;
+}
+.product__share--icon:not(:first-child) {
+  margin-left: 10px
+}
+.product__share--icon:hover {
+  border: 2px solid #003a7c;
+  background-color: #003a7c;
+}
+
+.product__share .count-twits {
+  position: relative;
+  margin-left: 10px;
+}
+.product__share .count-twits a{
+  position: absolute;
+  top: 50%;
+  margin-top: -0.625em;
+  left: 50%;
+  margin-left: -0.625em;
+}
+
+
+
+
 
 
 
