@@ -16,17 +16,16 @@
 .product__price-current {
   padding-left: 10px;
   color: #9a9b9b;
-  font-weight: 600;
 }
 .product__price-discount {
   padding-left: 40px;
 }
-.product__price-discount .price{
+.price {
   font-weight: 600;
+}
+.price:after {
+  content: ' ₽';
 }
 .product__price-discount .sale {
   font-size: 2rem;
-}
-.product__price-current:after, .product__price-discount .price:after {
-  content: ' ₽';
 }

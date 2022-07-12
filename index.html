@@ -10,6 +10,15 @@
   <script src="https://kit.fontawesome.com/b6912d0d45.js" crossorigin="anonymous"></script>
   <!-- INCLUDE CSS -->
   <link rel="stylesheet" href="css/main.css">
+  <!-- INCLUDE jQuery 3.6.0 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(function () {
+      var a = $('a');
+      console.log(a);
+    })
+
+  </script>
 </head>
 <body>
 <div class="layout">
@@ -46,7 +55,7 @@
       <div class="product__price">
         <div class="product__price-actual">
           <span class="product__price-old">2 666</span>
-          <span class="product__price-current">2 499</span>
+          <span class="product__price-current price">2 499</span>
         </div>
         <div class="product__price-discount">
           <span class="price">2 227</span>
@@ -64,8 +73,8 @@
       </div>
 
       <div class="product__actions">
-        <a href="#" class="button button-to-shop">В магазин</a>
-        <a href="#" class="button button-to-favorites">В избранное</a>
+        <button type="submit" name="toshop" class="button">В магазин</button>
+        <button type="submit" name="tofavorites" class="button button-to-favorites">В избранное</button>
       </div>
 
       <div class="product__about">
@@ -88,6 +97,7 @@
     </div>
 
   </div>
+
 
 </div>
 
