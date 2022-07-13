@@ -166,6 +166,38 @@
 }
 
 
+/*
+==================================
+            Block count
+==================================
+*/
+.product__quantity {
+  max-width: 150px;
+  margin-top: 40px;
+  border: 2px solid #d9d9d9;
+  border-radius: 4px;
+  display: flex;
+  align-items: baseline;
+}
+.product__button-for-quantity {
+  padding: 10px;
+  width: 30%;
+}
+.product__button-for-quantity img {
+  text-align: center;
+  height: 16px;
+}
+.product__quantity input {
+  border: none;
+  border-left: 2px solid #d9d9d9;
+  border-right: 2px solid #d9d9d9;
+  background-color: #eeeeee;
+  text-align: center;
+  width: 32px;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 11px 15px;
+}
 
 
 
