@@ -47,12 +47,12 @@
 ==================================
 */
 
-.product__main-photo {
+.product__main {
   width: 90%;
   min-width: 350px;
   margin: 0px 120px;
 }
-#main-photo {
+.product__main--photo{
   margin: auto;
   width: 100%;
   height: auto;

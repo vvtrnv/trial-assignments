@@ -12,13 +12,6 @@
   <link rel="stylesheet" href="css/main.css">
   <!-- INCLUDE jQuery 3.6.0 -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    $(function () {
-      var a = $('a');
-      console.log(a);
-    })
-
-  </script>
 </head>
 <body>
 <div class="layout">
@@ -36,8 +29,8 @@
         </div>
       </div>
 
-      <div class="product__main-photo">
-        <img src="img/img1.png" alt="" id="main-photo">
+      <div class="product__main">
+        <img src="img/img1.png" alt="" class="product__main--photo">
       </div>
 
     </div>
@@ -90,9 +83,10 @@
         <a href="#"><img src="img/icons/twitter.svg" alt="twitter" class="product__share--icon"></a>
 
         <div class="count-twits">
-          <img src="img/icons/figure.png" alt="twitter">
-          <a href="#">123</a>
+          <div id="#triangle-left"></div>
+          <div class="count">123</div>
         </div>
+
       </div>
     </div>
 
