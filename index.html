@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="css/main.css">
   <!-- INCLUDE jQuery 3.6.0 -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <!-- INCLUDE Notify.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
 </head>
 <body>
 <div class="layout">
@@ -66,17 +68,17 @@
       </div>
 
       <div class="product__quantity">
-        <button class="product__button-for-quantity" type="button" name="minus">
-          <img src="img/icons/minus.svg" alt="минус">
+        <button class="button-minus" type="button" name="minus">
+          <img src="img/icons/minus_disable.svg" alt="минус">
         </button>
         <input type="text" name="quantity" value="1">
-        <button class="product__button-for-quantity" type="button" name="plus">
+        <button class="button-plus" type="button" name="plus">
           <img src="img/icons/plus.svg" alt="плюс">
         </button>
       </div>
 
       <div class="product__actions">
-        <button type="submit" name="toshop" class="button">В магазин</button>
+        <button onclick="test()" type="submit" name="toshop" class="button button-buy">Купить</button>
         <button type="submit" name="tofavorites" class="button button-to-favorites">В избранное</button>
       </div>
 

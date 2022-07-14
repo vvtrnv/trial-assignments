@@ -1,4 +1,3 @@
-
 // Выбираем все preview-photo и вешаем события
 const images = document.querySelectorAll('.product__preview--photo');
 images.forEach(item => {
