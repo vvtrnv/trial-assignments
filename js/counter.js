@@ -6,6 +6,8 @@ function test() {
 
 function changeImage(elem, src) {
   elem.setAttribute('src', src);
+  console.log(elem.getAttribute('src'));
+  console.log(document.documentURI);
 }
 
 
@@ -32,13 +34,13 @@ $(document).ready(function() {
 
       // Смена картинки минуса
       $this.children().each(function (index, elem) {
-        changeImage(elem, '../img/icons/minus.svg');
+        changeImage(elem, 'img/icons/minus.svg');
       });
     }
 
     if(quantity === 1) {
       $this.children().each(function (index, elem) {
-        changeImage(elem, '../img/icons/minus_disable.svg')
+        changeImage(elem, 'img/icons/minus_disable.svg')
       });
     }
 
@@ -56,7 +58,7 @@ $(document).ready(function() {
     if(quantity > 1) {
       // Смена картинки минуса
       $this.closest('div').find('.button-minus').children().each(function (index, elem) {
-        changeImage(elem, '../img/icons/minus.svg')
+        changeImage(elem, 'img/icons/minus.svg')
       });
     }
 

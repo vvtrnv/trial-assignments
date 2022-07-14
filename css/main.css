@@ -1,10 +1,10 @@
 /*@import (inline) "../node_modules/normalize.css/normalize.css";*/
 
-@import url('_fonts.css');
-@import url('buttons.css');
-@import url('blocks/layout.css');
-@import url('blocks/product/gallery.css');
-@import url('blocks/product/description.css');
+@import url('./_fonts.css');
+@import url('./buttons.css');
+@import url('./blocks/layout.css');
+@import url('./blocks/product/gallery.css');
+@import url('./blocks/product/description.css');
 
 
 html {
