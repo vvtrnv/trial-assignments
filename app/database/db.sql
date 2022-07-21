@@ -99,10 +99,10 @@ CREATE TABLE product_categories
 
 # ------ Fill table category
 INSERT INTO category(name, description)
-    VALUE ('Рубашки', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum, magna ac vestibulum scelerisque, quam turpis sagittis lorem, ut elementum turpis mauris et quam.');
+    VALUE ('Рубашки', 'Lorem ipsum dolor sit amet, urpis sagittis lorem');
 
 INSERT INTO category(parent_category_id, name, description)
-    VALUES (1, 'Рубашки Medicine', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum, magna ac vestibulum scelerisque'),
+    VALUES (1, 'Рубашки Medicine', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'),
            (2, 'Все модели Medicine', 'Lorem ipsum dolor sit amet, consectetur');
 
 INSERT INTO category(name, description)
@@ -115,7 +115,7 @@ INSERT INTO category(parent_category_id, name)
 # ------ Fill table product
 INSERT INTO product(name, description, is_active)
     VALUES ('Рубашка Medicine',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum, magna ac vestibulum scelerisque, quam turpis sagittis lorem, ut elementum turpis mauris et quam. Vestibulum sed tristique eros. Nulla facilisis tortor sodales, sagittis est et, cursus orci. Cras sodales ligula massa, at dapibus quam gravida pretium. Duis vitae massa ante. Sed congue ante lacus, in pretium ligula fermentum vulputate. Cras tincidunt enim sed est euismod aliquet. ',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             true),
            ('Рубашка Medicine 1',
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -159,43 +159,43 @@ INSERT INTO product(name, description, is_active)
 
 INSERT INTO product(name, description, is_active)
     VALUES ('Рубашка обычная',
-            'Cras odio elit, posuere in nulla vitae, pellentesque vulputate neque. Mauris tincidunt ligula purus, vel rhoncus eros egestas eget. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam vel dui vestibulum mollis. Ut sed rutrum lectus, quis facilisis ex.',
+            ' Ut sed rutrum lectus, quis facilisis ex.',
             true),
            ('Рубашка обычная 1',
-            'Cras odio elit, posuere in nulla vitae, pellentesque vulputate neque. Mauris tincidunt ligula purus, vel rhoncus eros egestas eget. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam vel dui vestibulum mollis. Ut sed rutrum lectus, quis facilisis ex.',
+            'Ut sed rutrum lectus, quis facilisis ex.',
             true),
            ('Рубашка обычная 2',
-            'Cras odio elit, posuere in nulla vitae, pellentesque vulputate neque. Mauris tincidunt ligula purus, vel rhoncus eros egestas eget. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam vel dui vestibulum mollis. Ut sed rutrum lectus, quis facilisis ex.',
+            'Ut sed rutrum lectus, quis facilisis ex.',
             true),
            ('Рубашка обычная 3',
-            'Cras odio elit, posuere in nulla vitae, pellentesque vulputate neque. Mauris tincidunt ligula purus, vel rhoncus eros egestas eget. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam vel dui vestibulum mollis. Ut sed rutrum lectus, quis facilisis ex.',
+            'Ut sed rutrum lectus, quis facilisis ex.',
             true),
            ('Рубашка обычная 4',
-            'Cras odio elit, posuere in nulla vitae, pellentesque vulputate neque. Mauris tincidunt ligula purus, vel rhoncus eros egestas eget. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam vel dui vestibulum mollis. Ut sed rutrum lectus, quis facilisis ex.',
+            'Ut sed rutrum lectus, quis facilisis ex.',
             true),
            ('Рубашка обычная 5',
-            'Cras odio elit, posuere in nulla vitae, pellentesque vulputate neque. Mauris tincidunt ligula purus, vel rhoncus eros egestas eget. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam vel dui vestibulum mollis. Ut sed rutrum lectus, quis facilisis ex.',
+            'Ut sed rutrum lectus, quis facilisis ex.',
             true),
            ('Рубашка обычная 6',
-            'Cras odio elit, posuere in nulla vitae, pellentesque vulputate neque. Mauris tincidunt ligula purus, vel rhoncus eros egestas eget. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam vel dui vestibulum mollis. Ut sed rutrum lectus, quis facilisis ex.',
+            'Ut sed rutrum lectus, quis facilisis ex.',
             true),
            ('Рубашка обычная 7',
-            'Cras odio elit, posuere in nulla vitae, pellentesque vulputate neque. Mauris tincidunt ligula purus, vel rhoncus eros egestas eget. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam vel dui vestibulum mollis. Ut sed rutrum lectus, quis facilisis ex.',
+            'Ut sed rutrum lectus, quis facilisis ex.',
             true),
            ('Рубашка обычная 8',
-            'Cras odio elit, posuere in nulla vitae, pellentesque vulputate neque. Mauris tincidunt ligula purus, vel rhoncus eros egestas eget. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam vel dui vestibulum mollis. Ut sed rutrum lectus, quis facilisis ex.',
+            'Ut sed rutrum lectus, quis facilisis ex.',
             true),
            ('Рубашка обычная 9',
-            'Cras odio elit, posuere in nulla vitae, pellentesque vulputate neque. Mauris tincidunt ligula purus, vel rhoncus eros egestas eget. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam vel dui vestibulum mollis. Ut sed rutrum lectus, quis facilisis ex.',
+            'Ut sed rutrum lectus, quis facilisis ex.',
             true),
            ('Рубашка обычная 10',
-            'Cras odio elit, posuere in nulla vitae, pellentesque vulputate neque. Mauris tincidunt ligula purus, vel rhoncus eros egestas eget. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam vel dui vestibulum mollis. Ut sed rutrum lectus, quis facilisis ex.',
+            'Ut sed rutrum lectus, quis facilisis ex.',
             true),
            ('Рубашка обычная 11',
-            'Cras odio elit, posuere in nulla vitae, pellentesque vulputate neque. Mauris tincidunt ligula purus, vel rhoncus eros egestas eget. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam vel dui vestibulum mollis. Ut sed rutrum lectus, quis facilisis ex.',
+            'Ut sed rutrum lectus, quis facilisis ex.',
             true),
            ('Рубашка обычная 12',
-            'Cras odio elit, posuere in nulla vitae, pellentesque vulputate neque. Mauris tincidunt ligula purus, vel rhoncus eros egestas eget. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam vel dui vestibulum mollis. Ut sed rutrum lectus, quis facilisis ex.',
+            'Ut sed rutrum lectus, quis facilisis ex.',
             true);
 
 INSERT INTO product(name, description, is_active)
