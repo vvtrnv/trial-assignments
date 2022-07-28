@@ -1,4 +1,4 @@
-CREATE DATABASE store;
+CREATE DATABASE store default charset utf8;
 
 USE store;
 
