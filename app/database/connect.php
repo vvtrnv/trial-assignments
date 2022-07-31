@@ -17,5 +17,5 @@ try {
 		$options
 	);
 } catch (PDOException $i) {
-	die("Ошибка подключения к базе данных!");
+	die("Ошибка подключения к базе данных: {$i->getMessage()}");
 }

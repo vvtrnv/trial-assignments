@@ -1,6 +1,6 @@
 <?php
 include_once 'path.php';
-include_once 'app/controllers/categories.php';
+include_once 'app/controllers/categoryController.php';
 ?>
 
 <!doctype html>
@@ -9,7 +9,7 @@ include_once 'app/controllers/categories.php';
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Trial assignments</title>
+	<title>MYshop</title>
 
 	<!-- INCLUDE CSS styles -->
 	<link rel="stylesheet" href="css/main.css">

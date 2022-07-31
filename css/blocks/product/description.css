@@ -33,9 +33,16 @@
 .product__categories {
   padding-top: 20px;
   font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
 }
-.product__categories a:not(:first-child) {
-  padding-left: 30px;
+.product__categories a {
+  margin-top: 5px;
+}
+.product__categories a:not(:last-child) {
+  margin-right: 30px;
 }
 
 

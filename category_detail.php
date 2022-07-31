@@ -1,6 +1,6 @@
 <?php
 include_once 'path.php';
-include_once 'app/controllers/categories.php';
+include_once 'app/controllers/productListController.php';
 ?>
 
 <!doctype html>
@@ -9,7 +9,7 @@ include_once 'app/controllers/categories.php';
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Trial assignments</title>
+	<title><?=$catName?></title>
 
 	<!-- INCLUDE CSS styles -->
 	<link rel="stylesheet" href="css/main.css">
@@ -19,6 +19,14 @@ include_once 'app/controllers/categories.php';
 <?php include 'app/include/header.php';?>
 
 <div class="layout">
+  <div class="container__btn-back">
+    <form action="category_detail.php" method="post">
+      <button class="button button-back" name="btn-back"
+              value="<?= isset($_SERVER['HTTP_REFERER']) ? htmlspecialchars($_SERVER['HTTP_REFERER']) : ''; ?>">Назад</button>
+    </form>
+  </div>
+
+
   <div class="categories">
     <div class="categories__detail">
       <h2><?=$catName?></h2>
@@ -36,18 +44,20 @@ include_once 'app/controllers/categories.php';
                 <?=$product['cat_name']?>
             </div>
             <div class="categories__product-title">
-              <a href="#"><?=$product['p_name']?></a>
+              <a href="product.php?id=<?=$product['p_id']?>"><?=$product['p_name']?></a>
             </div>
           </div>
         </div>
 	  <?php endforeach; ?>
     </div>
   </div>
+
   <div class="pages">
     <?php for($numPage = 1; $numPage <= $countPages; $numPage++): ?>
       <a class="page" href="?cat_id=<?=$catID?>&page=<?=$numPage?>"><?=$numPage?> </a>
     <?php endfor;?>
   </div>
+
 </div>
 
 <?php include_once 'app/include/footer.php';?>

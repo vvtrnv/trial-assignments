@@ -38,3 +38,14 @@ button {
   background-color: #262626;
   border: 2px solid #262626;
 }
+
+.container__btn-back {
+  margin-top: 20px;
+}
+.button-back {
+  min-width: 80px;
+  background-color: #262626;
+}
+.button-back:hover {
+  background-color: #333333;
+}
