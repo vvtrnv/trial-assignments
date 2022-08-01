@@ -1,0 +1,35 @@
+.feedback-form {
+  width: 600px;
+  margin: 40px auto;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+.feedback-form h1 {
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+.feedback-form__group {
+  width: 80%;
+  margin: 20px 0;
+}
+.feedback-form__input {
+  width: 100%;
+  padding: 12px 0;
+  border: 1px solid #262626;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+.feedback-form__label {
+  text-align: left;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.feedback-form_message {
+  color: #c70000;
+}

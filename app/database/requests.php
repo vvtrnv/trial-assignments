@@ -10,6 +10,26 @@ function test($value) {
 }
 
 /**
+ * Обработка строк
+ * @param $value string
+ * @return string
+ */
+function stringHandling($value) {
+	return trim(htmlspecialchars($value));
+}
+
+
+/**
+ * Обработка чисел (приведение к int)
+ * @param $value int|float|string
+ * @return int
+ */
+function intHandling($value) {
+	return (int)$value;
+}
+
+
+/**
  * Функция редиректа на 404 страницу (прерывает дальнейшую работу скрипта)
  * @return void
  */
@@ -21,8 +41,8 @@ function redirectNotFoundPage() {
 
 /**
  * При наличии параметров для select составляет строку запроса с переданными параметрами
- * @param string $sql
- * @param array-key $params
+ * @param $sql string
+ * @param $params array-key
  * @return string
  */
 function prepareParamsToString($sql, $params) {
@@ -64,8 +84,8 @@ function countFoundRowsOnLastQuery() {
 
 
 /**
- * @param string $table
- * @param array-key $params
+ * @param $table string
+ * @param $params array-key
  * @return array|false
  */
 function selectOne($table, $params = []) {
@@ -78,6 +98,7 @@ function selectOne($table, $params = []) {
 
 	$sql = $sql . " LIMIT 1";
 
+
 	$query = $pdo->prepare($sql);
 
 	$query->execute();
@@ -89,7 +110,7 @@ function selectOne($table, $params = []) {
 /**
  * Посылает запрос к БД на получение списка категорий и кол-ва товаров в ней.
  * Опционально: при передаче параметра (id товара) получает категории только конкретного товара
- * @param int $productID
+ * @param $productID int
  * @return array|false
  */
 function selectCategoriesAndCountProducts($productID = null) {
@@ -122,7 +143,9 @@ function selectCategoriesAndCountProducts($productID = null) {
 
 /**
  * Посылает запрос к БД на получение списка товаров из выбранной категории
- * @param int $catID
+ * @param $catID int
+ * @param $page int
+ * @param $countPerPage int
  * @return array|false
  */
 function selectAllProductsByCatID($catID, $page, $countPerPage) {
@@ -152,7 +175,7 @@ function selectAllProductsByCatID($catID, $page, $countPerPage) {
 
 /**
  * Посылает запрос к БД на получение массива картинок товара по его id
- * @param int $productID
+ * @param $productID int
  * @return array|false
  */
 function selectImagesOfProductByID($productID) {
@@ -174,6 +197,11 @@ function selectImagesOfProductByID($productID) {
 }
 
 
+/**
+ * Посылает запрос на получение основной иформации о товаре
+ * @param $productID int
+ * @return array-key
+ */
 function selectProductWithMainImageByID($productID) {
 	global $pdo;
 
@@ -198,27 +226,20 @@ function selectProductWithMainImageByID($productID) {
 	return $query->fetch();
 }
 
+/**
+ * Добавление новой записи в таблицу `questions`
+ * @param $params array
+ * @return false|string
+ */
+function insertInQuestions($params) {
+	global $pdo;
 
+	$sql = "INSERT INTO questions(name, email, birthday, gender, title, description)
+				VALUE(:username, :email, :birthday, :gender, :title, :description)";
 
+	$query = $pdo->prepare($sql);
 
-///**
-// * Посылает запрос к БД на получение массива c категориями товара
-// * @param int $productID
-// * @return array|false
-// */
-//function selectProductCategoriesByID($productID) {
-//	global $pdo;
-//
-//	$sql = "SELECT	pc.category_id as cat_id,
-//       				c.name as cat_name
-//				FROM product_categories pc
-//    			JOIN category c ON pc.category_id = c.category_id
-//				JOIN product p ON pc.product_id = p.product_id
-//    			WHERE pc.product_id = $productID";
-//
-//	$query = $pdo->prepare($sql);
-//
-//	$query->execute();
-//
-//	return $query->fetchAll();
-//}
+	$query->execute($params);
+
+	return $pdo->lastInsertId();
+}

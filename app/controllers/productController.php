@@ -31,7 +31,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET' && !isset($_GET['id'])) {
  * Получение данных о товаре
  */
 if($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['id'])) {
-	$productID = (int)$_GET['id'];
+	$productID = intHandling($_GET['id']);
 
 	$images = selectImagesOfProductByID($productID);
 	checkVar($images);
@@ -48,8 +48,8 @@ if($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['id'])) {
  * Обработка нажатия кнопки "Назад"
  */
 if(isset($_POST['btn-back']) && isset($_POST['p_id'])) {
-	$urlBack = htmlspecialchars($_POST['btn-back']);
-	$productID = (int)$_POST['p_id'];
+	$urlBack = stringHandling($_POST['btn-back']);
+	$productID = intHandling($_POST['p_id']);
 
 	if(empty($urlBack)) {
 		$product = selectOne('product', ['product_id' => $productID]);
@@ -59,6 +59,5 @@ if(isset($_POST['btn-back']) && isset($_POST['p_id'])) {
 	}
 	else {
 		echo $urlBack;
-		$categoryBack = 1;
 	}
 }

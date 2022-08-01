@@ -49,3 +49,12 @@ button {
 .button-back:hover {
   background-color: #333333;
 }
+
+.button-success {
+  margin: 20px auto;
+  width: 80px;
+  background-color: #262626;
+}
+.button-success:hover {
+  background-color: #333333;
+}

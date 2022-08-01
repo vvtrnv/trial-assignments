@@ -92,6 +92,20 @@ CREATE TABLE images
         ON UPDATE CASCADE
 );
 
+CREATE TABLE questions (
+    question_id INT NOT NULL AUTO_INCREMENT,
+    name varchar(255) NOT NULL,
+    email varchar(255) NOT NULL,
+    birthday date NOT NULL,
+    gender boolean NOT NULL,
+    title varchar(255) NOT NULL,
+    description text,
+
+    CONSTRAINT questions_pk PRIMARY KEY (question_id)
+);
+
+
+
 # ------ Fill table category
 INSERT INTO category(name, description)
     VALUE ('Рубашки', 'Lorem ipsum dolor sit amet, urpis sagittis lorem');

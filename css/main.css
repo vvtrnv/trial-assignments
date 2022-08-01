@@ -6,6 +6,7 @@
 @import url('./blocks/product/gallery.css');
 @import url('./blocks/product/description.css');
 @import url('./blocks/categories/categories.css');
+@import url('./blocks/feedback-form/feedback-form.css');
 
 
 html {
@@ -44,6 +45,13 @@ header {
 header * {
   color: #FFF;
 }
+
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .logo {
   padding-top:15px;
 }
@@ -54,6 +62,13 @@ header * {
   align-items: center;
 }
 .logo a:hover {
+  color: #fff;
+}
+.to-feedback {
+  float: right;
+  /*margin-top: 32px;*/
+}
+.to-feedback:hover {
   color: #fff;
 }
 
