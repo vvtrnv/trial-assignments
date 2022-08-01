@@ -86,6 +86,8 @@ function countFoundRowsOnLastQuery() {
 
 
 /**
+ * Посылает запрос на получение одной записи с БД
+ * Опционально: можно передать параметры
  * @param $table string
  * @param $params array-key
  * @return array|false
