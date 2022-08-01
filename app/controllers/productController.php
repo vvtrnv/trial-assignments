@@ -58,6 +58,6 @@ if(isset($_POST['btn-back']) && isset($_POST['p_id'])) {
 		header('Location: ' . BASE_URL . 'category_detail.php?cat_id=' . $product['main_category_id']);
 	}
 	else {
-		echo $urlBack;
+		header('Location: ' . $urlBack);
 	}
 }

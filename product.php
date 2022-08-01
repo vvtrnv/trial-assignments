@@ -29,7 +29,7 @@ include_once 'app/controllers/productController.php';
     <form action="product.php" method="post">
       <input type="hidden" name="p_id" value="<?=$productID;?>">
       <button class="button button-back" name="btn-back"
-              value="<?= isset($_SERVER['HTTP_REFERER']) ? htmlspecialchars($_SERVER['HTTP_REFERER']) : ''; ?>">Назад</button>
+              value="<?= isset($_SERVER['HTTP_REFERER']) ? stringHandling($_SERVER['HTTP_REFERER']) : ''; ?>">Назад</button>
     </form>
   </div>
 

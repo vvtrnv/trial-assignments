@@ -22,7 +22,7 @@ include_once 'app/controllers/productListController.php';
   <div class="container__btn-back">
     <form action="category_detail.php" method="post">
       <button class="button button-back" name="btn-back"
-              value="<?= isset($_SERVER['HTTP_REFERER']) ? htmlspecialchars($_SERVER['HTTP_REFERER']) : ''; ?>">Назад</button>
+              value="<?= isset($_SERVER['HTTP_REFERER']) ? stringHandling($_SERVER['HTTP_REFERER']) : ''; ?>">Назад</button>
     </form>
   </div>
 

@@ -15,17 +15,19 @@ function test($value) {
  * @return string
  */
 function stringHandling($value) {
-	return trim(htmlspecialchars($value));
+	$value = trim($value);
+	$value = strip_tags($value);
+	return htmlspecialchars($value);
 }
 
 
 /**
  * Обработка чисел (приведение к int)
- * @param $value int|float|string
+ * @param $value int|string
  * @return int
  */
 function intHandling($value) {
-	return (int)$value;
+	return intval($value);
 }
 
 

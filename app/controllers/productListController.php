@@ -32,10 +32,11 @@ function getAllProductsWithCatID($cat_id, $page) {
 	return selectAllProductsByCatID($cat_id, ($page - 1)* NUM, NUM);
 }
 
+
+
 if(isset($_POST['btn-back'])) {
 	header('Location:' . BASE_URL);
 }
-
 
 /**
  * Если не указана категория в GET параметре
@@ -46,12 +47,12 @@ if($_SERVER['REQUEST_METHOD'] == 'GET' && !isset($_GET['cat_id'])) {
 
 
 /**
- * Получение информации о категории и запись в переменные, которые используются в category_detail.php
+ * Получение данных о категории и запись в переменные, которые используются в category_detail.php
  */
 if($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['cat_id'])) {
 	$catID = intHandling($_GET['cat_id']);
 
-	$currentPage = !empty($_GET['page']) ? (int)$_GET['page'] : 1;
+	$currentPage = !empty($_GET['page']) ? intHandling($_GET['page']) : 1;
 
 	$category = selectOne('category', ['category_id' => $catID]);
 	if(empty($category)) {
