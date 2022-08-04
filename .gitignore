@@ -4,7 +4,10 @@ node_modules
 # directory
 .idea
 
+# files
 psd/phone-320.psd
 psd/tablet-768.psd
 psd/tablet-1000.psd
-
+.editorconfig
+package.json
+gulpfile.js
